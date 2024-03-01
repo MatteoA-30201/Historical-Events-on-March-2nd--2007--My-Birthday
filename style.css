@@ -1,5 +1,5 @@
 .default-text-box {
-  border: #ffffff solid 2px;
+  border: rgba(96, 224, 255, 0.639) solid 2px;
   border-radius: 62px;
   background-color: #232323;
 }
@@ -67,6 +67,7 @@
 body {
   width: 100%;
   overflow-x: hidden;
+  background-color: #0b0b0b;
 }
 
 #navbar-background {
@@ -84,25 +85,8 @@ display: flex;
 flex-flow: row nowrap;
 }
 
-@media (min-width: 1000px) {
-
- .heading-size-change {
-  font-size: 30px;
-}
-}
-
-@media (min-width: 790.98px) {
-
-.heading-size-change {
-  font-size: 20px;
-}
-}
 
 @media (max-width: 790.98px) {
-
-.heading-size-change {
-  font-size: 15px;
-}
 #logo img {
   width: 70px;
   height: 70px;
@@ -114,9 +98,7 @@ flex-flow: row nowrap;
   width: 100%;
   justify-content: flex-start;
 }
-.heading-size-change {
-  font-size: 14px;
-}
+
 #logo img {
   width: 54px;
   height: 54px;
@@ -212,10 +194,6 @@ font-family: 'Montserrat', sans-serif;
   .navbar-nav {
     width: max(1600px, calc(70% + 100px));
   }
-
-  .heading-size-change {
-    font-size: 57px;
-  }
 }
 
 @media (max-width: 870px) {
@@ -240,7 +218,6 @@ font-family: 'Montserrat', sans-serif;
   .skeuomorphic-buttons-navbar a.skeuomorphic-buttons {
     display: flex;
     text-align: center;
-    font-size: 12.5px;
     align-items: center;
     border-radius: 10px;
     width: 100%;
@@ -291,6 +268,12 @@ font-family: 'Montserrat', sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 40px;
+  overflow: hidden;
+}
+
+.content-scrollbar-overflow-container {
+  overflow-y: scroll;
+  overflow: auto;
 }
 
 .info-paragraph {
@@ -353,14 +336,14 @@ font-family: 'Montserrat', sans-serif;
     border-radius: 0.2em;
     font-size: 1.5em;
     color: #fff;
-    border: 0.08em solid #fff;
+    border: 0.08em solid rgba(96, 224, 255, 0.639);
     box-shadow: 0 0.4em 0.1em 0.019em #fff;
   }
   
   button span:hover {
     transition: all 0.5s;
     transform: translate(0, 0.4em);
-    box-shadow: 0 0 0 0 #fff;
+    box-shadow: 0 0 0 0 #212121;
     color: #00171F;
     border: 0.16em solid #212121;
   }
@@ -442,14 +425,14 @@ button span {
   border-radius: 0.4em;
   font-size: 1.5em;
   color: #fff;
-  border: 0.16em solid #fff;
+  border: 0.16em solid rgba(96, 224, 255, 0.639);
   box-shadow: 0 0.8em 0.1em 0.038em #fff;
 }
 
 button span:hover {
   transition: all 0.5s;
   transform: translate(0, 0.8em);
-  box-shadow: 0 0 0 0 #fff;
+  box-shadow: 0 0 0 0 #212121;
   color: #00171F;
   border: 0.16em solid #212121;
 }
@@ -551,3 +534,32 @@ button span:not(hover)::after {
  * ---------------------------------------------- */
 
  @-webkit-keyframes scale-out-center{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(0);transform:scale(0);opacity:1}}@keyframes scale-out-center{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(0);transform:scale(0);opacity:1}}
+
+@media (max-width: 1350px) {
+  .heading-size-change {
+    font-size: 150%;
+  }
+}
+
+@media (min-width: 1350px) {
+  .heading-size-change {
+    font-size: 350%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #232323; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgba(68, 159, 182, 0.639); 
+  border-radius: 7.5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(96, 224, 255, 0.639); 
+}
