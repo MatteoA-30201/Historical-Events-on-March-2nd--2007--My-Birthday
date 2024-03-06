@@ -248,7 +248,7 @@ body {
 
 .info-box {
   width: 750px;
-  height: 565px;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 40px;
@@ -266,7 +266,7 @@ body {
 
 @media (max-width: 990px) {
   .picture-box {
-    width: 264px;
+    width: 700px;
     height: 100%;
     border-radius: 20px;
     margin-top: -40px;
@@ -521,7 +521,7 @@ body {
   }
 
   .picture-box {
-    width: 750px;
+    width: 700px;
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1024,5 +1024,7 @@ body {
 }
 
 #img-change {
-  border-radius: 10px;
+  border-radius: 20px;
+  width: 80%;
+  height: 80%;
 }
